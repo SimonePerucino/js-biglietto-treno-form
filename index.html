@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-red wh-100 max-height-100vh pad-20">
+        <h1 class="text-ac text-color-w ">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <form action="">
+            <div class="wrapper marg-auto marg-top-20 pad-20">
+                <div class="row text-ac">
+
+                    <div class="marg-top-20 display-ib marg-right-50">
+                        <div class="text-ac marg-bot-20">Nome e Cognome</div>
+                        <div>
+                            <input type="text" id="nomeCognomeUtente">
+                        </div>
+                    </div>
+
+                    <div class="marg-top-20 display-ib marg-right-50">
+                        <div class="text-ac marg-bot-20">Km da percorrere</div>
+                        <div>
+                            <input type="number" id="kilometri">
+                        </div>
+                    </div>
+
+                    <div class="marg-top-20 display-ib">
+                        <div class="text-ac marg-bot-20">Fascia d'età</div>
+                        <div>
+                            <select name="scelta" id="scelta">
+                                <option value="maggiorenne" id="maggio">Maggiorenne</option>
+                                <option value="minorenne" id="mino">Minorenne</option>
+                                <option value="over" id="over">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-ac marg-top-100">
+                    <button type="submit" id="genera">Genera</button>
+                    <button type="reset">Annulla</button>
+                </div>
+            </div>
+        </form>
+        <h1 class="text-ac text-color-w marg-top-20">IL TUO BIGLIETTO</h1>
+        <div class="wrapper marg-auto marg-top-20 pad-20">
+            <h1>Dettaglio Passeggeri</h1>
+            <div class="display-ib w-200 h-200 bg-gray pad-20">
+                <h3>NOME PASSEGGERO</h3>
+                <div id="nome-passeggero"></div>
+            </div>
+            <div class="display-ib h-200 border-b border-t w-200 vert-a-t w-70x pad-20">
+                <div>
+                    <h3 class="display-ib marg-right-50 w-100">OFFERTA</h3>
+                    <h3 class="display-ib marg-right-50 w-100 ">CARROZZA</h3>
+                    <h3 class="display-ib marg-right-50 w-100">CODICE CP</h3>
+                    <h3 class="display-ib">COSTO BIGLIETTO</h3>
+                </div>
+                <div class="marg-top-20">
+                    <div class="display-ib marg-right-50 w-100" id="sconto-sul-biglietto"></div>
+                    <div class="display-ib marg-right-50 w-100" id="carrozza">7</div>
+                    <div class="display-ib marg-right-50 w-100" id="codice-biglietto">97928</div>
+                    <div class="display-ib" id="prezzo-stampato"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="javascript.js">
+
+    </script>
+</body>
+
+</html>
